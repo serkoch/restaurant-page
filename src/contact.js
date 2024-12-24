@@ -9,7 +9,7 @@ function createContact() {
   address.textContent = 'Manhattan, NY, USA'
 
   const restaurantMap = document.createElement('img');
-  restaurantMap.src = 'img/map.jpg';
+  restaurantMap.src = 'assets/map.jpg';
   restaurantMap.alt = 'Pizzeria Mangione location';
 
   contact.appendChild(phoneNum);

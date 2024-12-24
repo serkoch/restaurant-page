@@ -3,7 +3,7 @@ function createMenuItem(name, description) {
   menuItem.classList.add('menu-item');
 
   const pizzaImage = document.createElement('img');
-  pizzaImage.src = `img/pizza/${name.toLowerCase()}.png`;
+  pizzaImage.src = `assets/pizza/${name.toLowerCase()}.png`;
   pizzaImage.alt = `Pizza ${name}`
 
   const pizzaName = document.createElement('h3');
@@ -26,11 +26,17 @@ function createMenu() {
   menu.appendChild(createMenuItem('Pepperoni', 'Tomato sauce, mozzarella cheese, pepperoni slices, garnished with basil'));
 
   menu.appendChild(createMenuItem('Funghi', 'Tomato sauce, mozzarella cheese, sliced tomatoes, mushrooms, black olives, garnished with oregano'));
+
   menu.appendChild(createMenuItem('Margherita', 'Tomato sauce, mozzarella cheese, and fresh basil leaves'));
+
   menu.appendChild(createMenuItem('Caprese', 'Tomato sauce, mozzarella cheese, sliced tomatoes, red onion rings, black olives, and basil leaves'));
+
   menu.appendChild(createMenuItem('Disgusto', 'Tomato sauce, mozzarella cheese, pineapple chunks, and ham'));
+
   menu.appendChild(createMenuItem('Pancetta', 'Tomato sauce, mozzarella cheese, sliced tomatoes, olives, bacon strips, and herbs'));
+
   menu.appendChild(createMenuItem('Diavolo', 'Tomato sauce, mozzarella cheese, pepperoni, chili peppers, and bell peppers'));
+
   menu.appendChild(createMenuItem('Veggie', 'Tomato sauce, mozzarella cheese, tomatoes, black olives, broccoli, red onion, bell peppers, and basil'));
 
   return menu

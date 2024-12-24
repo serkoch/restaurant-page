@@ -3,7 +3,7 @@ function createHome() {
   home.classList.add('home');
 
   const imageCook = document.createElement('img');
-  imageCook.src = 'img/pizzacut.jpg'
+  imageCook.src = 'assets/pizzacut.jpg'
   imageCook.alt = 'Cutting Pizza';
 
   home.appendChild(createPara('Fresh ingredients make the best pizza'));
