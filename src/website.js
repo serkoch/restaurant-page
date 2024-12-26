@@ -80,7 +80,9 @@ function createFooter() {
   const gitLink = document.createElement('a');
   gitLink.textContent = 'SerKoch';
   gitLink.href = 'https://github.com/serkoch/restaurant-page';
-  createdBy.textContent = `Created by ${gitLink}`;
+  createdBy.textContent = `Created by `;
+  createdBy.append(gitLink);
+  footer.appendChild(createdBy);
 
   return footer;
 }

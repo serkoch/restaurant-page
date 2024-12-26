@@ -3,10 +3,10 @@ function createContact() {
   contact.classList.add('contact');
 
   const phoneNum = document.createElement('p');
-  phoneNum.textContent = '123 456 7890';
+  phoneNum.textContent = '📞123 456 7890';
 
   const address = document.createElement('p');
-  address.textContent = 'Manhattan, NY, USA'
+  address.textContent = '🏠 3 4th Street, Manhattan, NY'
 
   const restaurantMap = document.createElement('img');
   restaurantMap.src = 'assets/map.jpg';
