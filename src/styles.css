@@ -16,7 +16,6 @@ body {
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   color: whitesmoke;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -65,6 +64,7 @@ main {
   justify-self: center;
   justify-content: center;
   min-height: calc(100vh - 210px);
+  flex-grow: 1;
   max-width: 900px;
 }
 
@@ -170,7 +170,27 @@ a:visited {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .home {
+    width: 350px;
+    height: 500px;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .home img {
+    height: 250px;
+  }
+
   .menu {
   width: 350px;
   grid-template-rows: repeat(8, 300px);
@@ -179,5 +199,16 @@ a:visited {
 
   .menu-item {
     justify-content: center;
+  }
+
+  .contact {
+    width: 350px;
+    height: 500px;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .contact img {
+    height: 250px;
   }
 }
